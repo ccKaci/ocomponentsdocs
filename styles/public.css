@@ -1,0 +1,129 @@
+/* 块样式 */
+.block {
+  background: #fff;
+    height: 40px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    margin: auto;
+    -webkit-align-items: center;
+    vertical-align:middle;
+    align-items: center;
+    -webkit-box-align: center;
+    padding: 0 10px 0 10px;
+}
+.block:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    border-top: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.block:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 40px;
+    right: 0;
+    border-bottom: 1px solid #D9D9D9;
+    color: #D9D9D9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+/* 块内部左侧样式 */
+.block_left {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    max-width: 38%;
+    margin: 0;
+    padding: 0;
+}
+/* 块内部右侧样式 */
+.block_right {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow-x: auto;
+    overflow-y: hidden;
+    font-size: 13px;
+}
+
+/* 标题名称样式 */
+.title_name {
+  display: inline-block;
+  margin:0px 5px;
+  line-height: 24px;
+  font-size: 15px;
+}
+/* 标题图标样式 */
+.title_i {
+  width: 13.7px;
+  text-align: center;
+  color:#10aeff;
+  display: inline-block;
+  /* vertical-align:middle; */
+}
+/* 选择框样式 */
+.block_select {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+/* .block_select option{
+    color: black;
+    background: #A6E1EC;
+}
+.block_select:focus{
+    border: 0px #ddd solid;
+    box-shadow: 0 0 15px 1px #DDDDDD;
+}
+.block_select option:hover{
+    background: #cdcdcd;
+} */
+/* 输入框样式 */
+.block_input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    -webkit-appearance: none;
+    background-color: transparent;
+    font-size: inherit;
+    color: inherit;
+}
+/* 输入框提示语placeholder样式 */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+	color: #666;
+	font-size: 13px;
+}
+
+/* 禁用 */
+
+.disable {
+  pointer-events: none;
+  color: #cdcdcd;
+}
+.display_none {
+  display: none
+}
+.gray {
+  color: #cdcdcd;
+}
