@@ -13,6 +13,20 @@
   <link rel="stylesheet" type="text/css" href="styles/waves.css">
   <script type="text/javascript" src="card.js"></script>
 <script type="text/javascript" src="waves.js"></script>
+
+<!-- inject css file -->
+<link rel="stylesheet" href="//unpkg.com/vuep/dist/vuep.css">
+
+<!-- inject javascript file -->
+<script src="//unpkg.com/vue"></script>
+<script src="//unpkg.com/vuep"></script>
+<script src="//unpkg.com/docsify"></script>
+
+<!-- or use the compressed files -->
+<script src="//unpkg.com/vue/dist/vue.min.js"></script>
+<script src="//unpkg.com/vuep/dist/vuep.min.js"></script>
+<script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+
 <script>
   if (typeof navigator.serviceWorker !== 'undefined') {
     navigator.serviceWorker.register('sw.js')
@@ -27,7 +41,11 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-	  loadSidebar: 'slider.md',
+	  loadSidebar: true,
+	  alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+	  subMaxLevel: 2,
 	  homepage: 'README.md',
 	  themeColor: '#2dacff',
 	  mergeNavbar: true,
